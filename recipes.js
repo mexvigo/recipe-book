@@ -54,7 +54,7 @@ window.RECIPES = [
   },
   {
     id: "linsen-erbseneintopf",
-    title: "Lentil & Sausage Stew",
+    title: "Split Pea Eintopfsuppe",
     category: "Soups & Stews",
     tags: ["german", "lentil", "sausage", "pea", "bacon"],
     servings: null,
