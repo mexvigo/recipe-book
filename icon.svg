@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#b4451f"/>
+  <g fill="none" stroke="#fbf7f2" stroke-width="24" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M176 112v104c0 26.5 21.5 48 48 48h0c26.5 0 48-21.5 48-48V112" opacity="0"/>
+    <!-- fork -->
+    <path d="M170 120v70c0 20 14 34 30 34s30-14 30-34v-70" fill="none"/>
+    <path d="M170 120v54M200 120v54M230 120v54"/>
+    <path d="M200 224v168"/>
+    <!-- spoon -->
+    <ellipse cx="330" cy="168" rx="34" ry="52" fill="#fbf7f2" stroke="none"/>
+    <path d="M330 220v172"/>
+  </g>
+</svg>
