@@ -54,7 +54,7 @@ window.RECIPES = [
   },
   {
     id: "linsen-erbseneintopf",
-    title: "Linsen- oder Erbseneintopf (Lentil or Pea Stew)",
+    title: "Lentil & Sausage Stew",
     category: "Soups & Stews",
     tags: ["german", "lentil", "sausage", "pea", "bacon"],
     servings: null,
@@ -108,7 +108,7 @@ window.RECIPES = [
   },
   {
     id: "pearl-couscous-chicken",
-    title: "Pearl Couscous with Chicken",
+    title: "Pearl Couscous Chicken",
     category: "Mains",
     tags: ["chicken", "couscous", "quick"],
     servings: null,
@@ -148,7 +148,7 @@ window.RECIPES = [
   },
   {
     id: "toms-sauce",
-    title: "Tom's Sauce (Simplified)",
+    title: "Tom's Tomato Sauce",
     category: "Sauces & Rubs",
     tags: ["tomato", "sauce", "italian", "vegetarian"],
     servings: null,
@@ -190,7 +190,7 @@ window.RECIPES = [
   },
   {
     id: "arroz-verde",
-    title: "Arroz Verde de Epicurioso",
+    title: "Arroz Verde",
     category: "Sides & Rice",
     tags: ["rice", "mexican", "poblano", "vegetarian"],
     servings: null,
@@ -436,7 +436,7 @@ window.RECIPES = [
   },
   {
     id: "avocado-tuna-cucumber-salad",
-    title: "Avocado Tuna Cucumber Salad",
+    title: "Avocado Tuna Salad",
     category: "Salads",
     tags: ["tuna", "avocado", "no-cook", "quick"],
     servings: null,
@@ -492,7 +492,7 @@ window.RECIPES = [
   },
   {
     id: "muffins",
-    title: "Muffins (Basic)",
+    title: "Basic Muffins",
     category: "Baking & Desserts",
     tags: ["muffins", "breakfast", "baking"],
     servings: null,
@@ -1078,7 +1078,7 @@ window.RECIPES = [
   },
   {
     id: "pasta-sausage-mushroom-thyme",
-    title: "Pasta with Sausage, Mushrooms & Thyme Butter",
+    title: "Sausage Mushroom Pasta",
     category: "Mains",
     tags: ["pasta", "sausage", "mushroom", "italian"],
     servings: "4",

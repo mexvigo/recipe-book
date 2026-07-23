@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#b4451f" />
+  <meta name="theme-color" content="#16130e" />
   <title>Recipe Book</title>
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="icon.svg" type="image/svg+xml" />
@@ -14,10 +14,14 @@
   <!-- ===== Home / list view ===== -->
   <header class="app-header" id="home-header">
     <div class="header-inner">
-      <h1 class="brand">Recipe Book</h1>
+      <div class="statusbar">
+        <span class="sb-left mono">RECIPE_DB</span>
+        <span class="sb-right mono" id="result-count">—</span>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">THEME</button>
+      </div>
       <div class="search-wrap">
-        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.3-4.3M11 19a8 8 0 100-16 8 8 0 000 16z"/></svg>
-        <input id="search" type="search" inputmode="search" placeholder="Search recipes or ingredients…" autocomplete="off" aria-label="Search recipes" />
+        <span class="prompt mono">SEARCH</span>
+        <input id="search" type="search" inputmode="search" placeholder="title or ingredient…" autocomplete="off" aria-label="Search recipes" />
         <button id="search-clear" class="search-clear" aria-label="Clear search" hidden>&times;</button>
       </div>
       <nav class="chips" id="category-chips" aria-label="Categories"></nav>
@@ -25,9 +29,8 @@
   </header>
 
   <main id="list-view">
-    <p id="result-count" class="result-count" aria-live="polite"></p>
-    <ul id="recipe-list" class="recipe-list"></ul>
-    <p id="empty-state" class="empty-state" hidden>No recipes match. Try a different search or category.</p>
+    <ul id="recipe-list" class="tile-grid"></ul>
+    <p id="empty-state" class="empty-state" hidden>NO MATCH FOUND</p>
   </main>
 
   <!-- ===== Detail view ===== -->
