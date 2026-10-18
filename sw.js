@@ -1,5 +1,5 @@
 /* Recipe Book service worker — cache-first offline shell. */
-var CACHE = "recipebook-v2";
+var CACHE = "recipebook-v3";
 var ASSETS = [
   "./",
   "./index.html",

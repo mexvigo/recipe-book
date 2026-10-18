@@ -43,6 +43,7 @@
     "lasagna-rolls": "🍝",
     "sichuan-pork-green-beans": "🥢",
     "chicken-soup": "🍜",
+    "creamy-chicken-soup-no-cream": "🥣",
     "mrs-walias-chicken-marinade": "🧂",
     "baked-oatmeal": "🥣",
     "snickerdoodles": "🍪",
