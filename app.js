@@ -57,7 +57,7 @@
   };
   var CAT_EMOJI = {
     "Mains": "🍽️", "Soups & Stews": "🍲", "Chili": "🌶️", "Salads": "🥗",
-    "Sides & Rice": "🍚", "Baking & Desserts": "🧁", "Sauces & Rubs": "🧂", "Breakfast": "🍳",
+    "Sides & Rice": "🍚", "Baking & Desserts": "🧁", "Sauces & Rubs": "🧂", "Breakfast": "🍳", "Toddler": "🧸",
   };
   function emojiFor(r) { return EMOJI[r.id] || CAT_EMOJI[r.category] || "🍴"; }
 

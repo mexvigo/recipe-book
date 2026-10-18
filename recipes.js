@@ -24,6 +24,7 @@ window.CATEGORIES = [
   "Baking & Desserts",
   "Sauces & Rubs",
   "Breakfast",
+  "Toddler",
 ];
 
 window.RECIPES = [
@@ -1055,7 +1056,7 @@ window.RECIPES = [
   {
     id: "toddler-rice-pudding",
     title: "Creamy Toddler Rice Pudding",
-    category: "Breakfast",
+    category: "Toddler",
     tags: ["toddler", "rice", "make-ahead", "kid-friendly"],
     servings: null,
     source: "Baby Foode",
@@ -1178,7 +1179,7 @@ window.RECIPES = [
   {
     id: "toddler-smoothie-ice-pops",
     title: "Toddler Mango Strawberry Smoothie / Ice Pops",
-    category: "Breakfast",
+    category: "Toddler",
     tags: ["toddler", "smoothie", "popsicle", "kid-friendly", "no added sugar", "yogurt", "mango", "strawberry"],
     servings: "6 pops or 2 small smoothies",
     source: "Claude",
