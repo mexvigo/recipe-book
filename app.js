@@ -51,6 +51,7 @@
     "walnut-chicken-salad": "🥗",
     "buffalo-chicken-salad": "🥗",
     "toddler-rice-pudding": "🍮",
+    "toddler-smoothie-ice-pops": "🍓",
     "pasta-sausage-mushroom-thyme": "🍝",
     "chicken-shawarma-bowls": "🥙",
   };

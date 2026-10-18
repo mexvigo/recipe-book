@@ -1175,4 +1175,26 @@ window.RECIPES = [
     ],
     notes: "An immersion blender works too: just pulse a few times in the pot. The lemon brightens it since there's no dairy; swap in a splash of white wine vinegar or skip it. Russet potatoes also work (blends even thicker). Good add-ins: mushrooms (with the onions), peas or corn, or spinach wilted in at the end.",
   },
+  {
+    id: "toddler-smoothie-ice-pops",
+    title: "Toddler Mango Strawberry Smoothie / Ice Pops",
+    category: "Breakfast",
+    tags: ["toddler", "smoothie", "popsicle", "kid-friendly", "no added sugar", "yogurt", "mango", "strawberry"],
+    servings: "6 pops or 2 small smoothies",
+    source: "Claude",
+    ingredients: [{ group: "", items: [
+      "1 ripe banana",
+      "1 cup mango and strawberries, fresh or frozen (blueberries or peach also work)",
+      "1 cup plain whole-milk yogurt",
+      "Milk (any kind), to thin as needed",
+      "Small handful frozen spinach, thawed and squeezed dry (optional)",
+    ]}],
+    steps: [
+      "Blend the banana (1), fruit (1 cup), yogurt (1 cup), and spinach (small handful, if using) until smooth.",
+      "Add milk a splash at a time until it reaches the consistency you want.",
+      "For a smoothie: serve right away.",
+      "For ice pops: pour into small molds, leaving a little room at the top, and freeze until solid, about 4 hours or overnight.",
+    ],
+    notes: "No added sugar. Whole-milk yogurt keeps pops creamy instead of icy. Fruit sweetness hides the spinach; start small. To release pops, run the mold under warm water for a few seconds. Small silicone molds are easiest for little hands.",
+  },
 ];
