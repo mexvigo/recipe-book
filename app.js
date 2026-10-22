@@ -55,6 +55,7 @@
     "pasta-sausage-mushroom-thyme": "🍝",
     "chicken-shawarma-bowls": "🥙",
     "smoky-tomato-rice-soup": "🍅",
+    "tuscan-white-bean-potato-soup": "🥣",
   };
   var CAT_EMOJI = {
     "Mains": "🍽️", "Soups & Stews": "🍲", "Chili": "🌶️", "Salads": "🥗",
