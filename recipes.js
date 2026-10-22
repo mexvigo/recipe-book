@@ -13,6 +13,7 @@
 //    ingredients array of groups: { group: "" | "Marinade" | ..., items: [ ... ] }
 //    steps       array of instruction strings (rendered as a numbered list)
 //    notes       free text or null (shown at the bottom)
+//    untried     optional; true = haven't cooked it yet (shows UNTRIED badge + filter)
 // ============================================================================
 
 window.CATEGORIES = [
@@ -1197,5 +1198,35 @@ window.RECIPES = [
       "For ice pops: pour into small molds, leaving a little room at the top, and freeze until solid, about 4 hours or overnight.",
     ],
     notes: "No added sugar. Whole-milk yogurt keeps pops creamy instead of icy. Fruit sweetness hides the spinach; start small. To release pops, run the mold under warm water for a few seconds. Small silicone molds are easiest for little hands.",
+  },
+{
+    id: "smoky-tomato-rice-soup",
+    title: "Smoky Tomato Rice Soup with Crispy Chickpeas",
+    category: "Soups & Stews",
+    tags: ["soup", "vegetarian", "chickpeas", "rice", "chipotle", "tomato", "easy"],
+    servings: "4",
+    source: "Adapted from NYT Cooking",
+    untried: true,
+    ingredients: [{ group: "", items: [
+      "1 x 15oz can chickpeas, drained and rinsed",
+      "4 tbsp vegetable oil, divided",
+      "1 tsp garlic powder, divided",
+      "1/2 tsp ground cumin",
+      "1/2 tsp onion powder",
+      "Kosher salt",
+      "1 cup jasmine rice",
+      "1 x 14.5oz can crushed fire-roasted tomatoes",
+      "1–2 tsp adobo sauce (from a can of chipotles)",
+      "4 cups vegetable or chicken broth",
+      "2 cups water",
+      "Greek yogurt and lime wedges, for serving",
+    ]}],
+    steps: [
+      "Pat the chickpeas (1 can) dry. Toss with 2 tbsp oil, garlic powder (1/2 tsp), cumin (1/2 tsp) and salt (1/2 tsp). Air fry at 400°F about 12 minutes, shaking halfway.",
+      "Meanwhile, heat the remaining oil (2 tbsp) in a large pot over medium-high. Add the rice (1 cup) and stir 3 minutes until lightly toasted.",
+      "Add the tomatoes (1 can), adobo (1–2 tsp), onion powder (1/2 tsp), remaining garlic powder (1/2 tsp), broth (4 cups) and water (2 cups). Bring to a simmer, lower the heat, and cook partly covered 10–12 minutes until the rice is tender. Salt to taste.",
+      "Serve topped with yogurt, chickpeas and a squeeze of lime.",
+    ],
+    notes: "Thickens as it sits; thin with water or broth, or eat it as a porridge. Canned tomatoes and broth are salty, so salt at the end. No air fryer: roast chickpeas at 425°F about 20 minutes.",
   },
 ];

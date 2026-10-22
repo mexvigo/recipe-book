@@ -54,6 +54,7 @@
     "toddler-smoothie-ice-pops": "🍓",
     "pasta-sausage-mushroom-thyme": "🍝",
     "chicken-shawarma-bowls": "🥙",
+    "smoky-tomato-rice-soup": "🍅",
   };
   var CAT_EMOJI = {
     "Mains": "🍽️", "Soups & Stews": "🍲", "Chili": "🌶️", "Salads": "🥗",
@@ -107,12 +108,12 @@
 
   // ---------- Chips ----------
   function buildChips() {
-    var cats = ["All", "Favorites"].concat(CATEGORIES);
+    var cats = ["All", "Favorites", "Untried"].concat(CATEGORIES);
     el.chips.innerHTML = "";
     cats.forEach(function (c) {
       var b = document.createElement("button");
       b.className = "chip";
-      b.textContent = c === "Favorites" ? "★ FAV" : c;
+      b.textContent = c === "Favorites" ? "★ FAV" : c === "Untried" ? "◌ UNTRIED" : c;
       b.setAttribute("aria-pressed", String(state.cat === c));
       b.addEventListener("click", function () {
         state.cat = c;
@@ -136,6 +137,7 @@
     var q = state.q.trim().toLowerCase();
     return RECIPES.filter(function (r) {
       if (state.cat === "Favorites") { if (!isFav(r.id)) return false; }
+      else if (state.cat === "Untried") { if (!r.untried) return false; }
       else if (state.cat !== "All") { if (r.category !== state.cat) return false; }
       return matchesQuery(r, q);
     });
@@ -169,6 +171,7 @@
 
     a.appendChild(idx); a.appendChild(fav);
     a.appendChild(emoji); a.appendChild(title); a.appendChild(cat);
+    if (r.untried) { var ut = document.createElement("span"); ut.className = "tile-untried"; ut.textContent = "UNTRIED"; a.appendChild(ut); }
     li.appendChild(a);
     return li;
   }
@@ -243,6 +246,7 @@
     var em = document.createElement("div"); em.className = "emoji"; em.textContent = emojiFor(r); hero.appendChild(em);
     var h2 = document.createElement("h2"); h2.textContent = r.title; hero.appendChild(h2);
     var tags = document.createElement("div"); tags.className = "detail-tags";
+    if (r.untried) { var un = document.createElement("span"); un.className = "tag untried"; un.textContent = "UNTRIED"; tags.appendChild(un); }
     if (r.servings) { var sv = document.createElement("span"); sv.className = "tag cat"; sv.textContent = "SERVES " + r.servings; tags.appendChild(sv); }
     (r.tags || []).forEach(function (t) { var e2 = document.createElement("span"); e2.className = "tag"; e2.textContent = t; tags.appendChild(e2); });
     hero.appendChild(tags);
