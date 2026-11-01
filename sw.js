@@ -1,5 +1,5 @@
-/* Recipe Book service worker — cache-first offline shell. */
-var CACHE = "recipebook-v9";
+/* Recipe Book service worker — network-first, falls back to cache offline. */
+var CACHE = "recipebook-v10";
 var ASSETS = [
   "./",
   "./index.html",
@@ -25,12 +25,14 @@ self.addEventListener("activate", function (e) {
 self.addEventListener("fetch", function (e) {
   if (e.request.method !== "GET") return;
   e.respondWith(
-    caches.match(e.request).then(function (hit) {
-      return hit || fetch(e.request).then(function (res) {
+    fetch(e.request, { cache: "no-cache" }).then(function (res) {
+      if (res && res.ok) {
         var copy = res.clone();
         caches.open(CACHE).then(function (c) { c.put(e.request, copy); });
-        return res;
-      }).catch(function () { return caches.match("./index.html"); });
+      }
+      return res;
+    }).catch(function () {
+      return caches.match(e.request).then(function (hit) { return hit || caches.match("./index.html"); });
     })
   );
 });
